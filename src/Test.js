@@ -2,6 +2,17 @@
  * Created by Administrator on 2018/5/11
  * Description:
  */
+
+/*
+constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this); //构造函数中绑定
+}
+<div onClick={this.handleClick.bind(this)}></div> //使用bind来绑定
+<div onClick={()=>this.handleClick()}></div> //使用arrow function来绑定
+*/
+
+
 'use strict';
 import React, {Component} from 'react';
 
