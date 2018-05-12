@@ -1,0 +1,10 @@
+vcs.xml
+/.idea/
+.idea/fileTemplates/
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/react-app.iml
+.idea/workspace.xml
+node_modules/
+npm-debug.log
