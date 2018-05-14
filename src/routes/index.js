@@ -1,15 +1,13 @@
 import React from 'react'
 import {BrowserRouter as Router,Route,Link} from 'react-router-dom'//导入的方式跟之前有点变化
-
+import music from '../static/music';
+import film from '../static/film';
+import react from '../static/react';
+import vue from '../static/vue';
+import angular from '../static/angular';
 const One = () => (
     <div>
         <h2>首页</h2>
-    </div>
-)
-
-const Two = () => (
-    <div>
-        <h2>我是第二页</h2>
     </div>
 )
 
@@ -53,15 +51,23 @@ const RouterList = () => (
                 <div className="layui-side-scroll">
                     <ul className="layui-nav layui-nav-tree"  lay-filter="test">
                         <li className="layui-nav-item"><Link to="/">首页</Link></li>
-                        <li className="layui-nav-item"><Link to="/two">第二页</Link></li>
                         <li className="layui-nav-item"><Link to="/Lists">一个列表</Link></li>
+                        <li className="layui-nav-item"><Link to="/music">音乐</Link></li>
+                        <li className="layui-nav-item"><Link to="/film">电影</Link></li>
+                        <li className="layui-nav-item"><Link to="/react">React</Link></li>
+                        <li className="layui-nav-item"><Link to="/vue">Vue</Link></li>
+                        <li className="layui-nav-item"><Link to="/angular">Angular</Link></li>
 
                     </ul>
                 </div>
             </div>
             <Route exact path="/" component={One}/>
-            <Route path="/two" component={Two}/>
             <Route path="/Lists" component={List}/>
+            <Route path="/music" component={music}/>
+            <Route path="/film" component={film}/>
+            <Route path="/react" component={react}/>
+            <Route path="/vue" component={vue}/>
+            <Route path="/angular" component={angular}/>
 
         </div>
 

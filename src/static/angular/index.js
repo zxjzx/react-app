@@ -1,20 +1,15 @@
 /**
- * Created by Administrator on 2018/5/14
+ * Created by zxj on 2018/5/14
  * Description:
  */
-'use strict';
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
-export default class homePage extends Component {
+export default class index extends Component {
     constructor(props) {
         super(props);
         this.state = {
             data: []
         }
-    }
-
-    componentWillMount() {
-        //TODO
     }
 
     componentDidMount() {
@@ -24,9 +19,8 @@ export default class homePage extends Component {
     render() {
         return (
             <div>
-                <div>我是页面</div>
+                我是angular index页面
             </div>
         )
     }
 }
-
