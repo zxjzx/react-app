@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import './App.css';
 import Routes from './routes'
 import { Router, Route, Link } from 'react-router'
 

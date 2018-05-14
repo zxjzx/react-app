@@ -3,7 +3,7 @@
  * Description:
  */
 import React, {Component} from 'react';
-import './App.css';
+import './home.css';
 import logo from './logo.svg';
 export default class index extends Component {
     constructor(props) {
