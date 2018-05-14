@@ -4,37 +4,89 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <link rel="stylesheet" href="layui/css/layui.css">
     <title>React App</title>
   </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <body class="layui-layout-body">
+  <div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+      <div class="layui-logo">我的个人爱好</div>
+      <!-- 头部区域（可配合layui已有的水平导航） -->
+      <ul class="layui-nav layui-layout-left">
+        <li class="layui-nav-item"><a href="">控制台</a></li>
+        <li class="layui-nav-item"><a href="">商品管理</a></li>
+        <li class="layui-nav-item"><a href="">用户</a></li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">相关链接</a>
+          <dl class="layui-nav-child">
+            <dd><a href="">邮件管理</a></dd>
+            <dd><a href="">消息管理</a></dd>
+            <dd><a href="">授权管理</a></dd>
+          </dl>
+        </li>
+      </ul>
+      <ul class="layui-nav layui-layout-right">
+        <li class="layui-nav-item">
+          <a href="javascript:;">
+            <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+            贤心
+          </a>
+          <dl class="layui-nav-child">
+            <dd><a href="">基本资料</a></dd>
+            <dd><a href="">安全设置</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item"><a href="">退了</a></li>
+      </ul>
+    </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <div class="layui-side layui-bg-black">
+      <div class="layui-side-scroll">
+        <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+        <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+          <li class="layui-nav-item layui-nav-itemed">
+            <a class="" href="javascript:;">所有商品</a>
+            <dl class="layui-nav-child">
+              <dd><a href="javascript:;">列表一</a></dd>
+              <dd><a href="javascript:;">列表二</a></dd>
+              <dd><a href="javascript:;">列表三</a></dd>
+              <dd><a href="">超链接</a></dd>
+            </dl>
+          </li>
+          <li class="layui-nav-item">
+            <a href="javascript:;">解决方案</a>
+            <dl class="layui-nav-child">
+              <dd><a href="javascript:;">列表一</a></dd>
+              <dd><a href="javascript:;">列表二</a></dd>
+              <dd><a href="">超链接</a></dd>
+            </dl>
+          </li>
+          <li class="layui-nav-item"><a href="">云市场</a></li>
+          <li class="layui-nav-item"><a href="">发布商品</a></li>
+        </ul>
+      </div>
+    </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div class="layui-body">
+      <!-- 内容主体区域 -->
+      <div style="padding: 15px;">内容主体区域</div>
+      <div id="root"></div>
+    </div>
+
+    <div class="layui-footer">
+      <!-- 底部固定区域 -->
+      © layui.com - 底部固定区域
+    </div>
+  </div>
+  <script src="layui/layui.js"></script>
+  <script>
+      //JavaScript代码区域
+      layui.use('element', function(){
+          var element = layui.element;
+
+      });
+  </script>
   </body>
 </html>
