@@ -1,5 +1,6 @@
 import React from 'react'
 import {BrowserRouter as Router,Route,Link} from 'react-router-dom'//导入的方式跟之前有点变化
+import home from '../static/home';
 import music from '../static/music';
 import film from '../static/film';
 import react from '../static/react';
@@ -61,7 +62,7 @@ const RouterList = () => (
                     </ul>
                 </div>
             </div>
-            <Route exact path="/" component={One}/>
+            <Route exact path="/" component={home}/>
             <Route path="/Lists" component={List}/>
             <Route path="/music" component={music}/>
             <Route path="/film" component={film}/>

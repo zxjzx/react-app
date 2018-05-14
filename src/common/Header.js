@@ -23,10 +23,10 @@ export default class Header extends Component {
     render() {
         return (
             <div className="layui-header">
-                <div className="layui-logo">layui 后台布局</div>
+                <div className="layui-logo">我的网站-工作内容</div>
                 <ul className="layui-nav layui-layout-left">
                     <li className="layui-nav-item"><a href="">控制台</a></li>
-                    <li className="layui-nav-item"><a href="">商品管理</a></li>
+                    <li className="layui-nav-item"><a href="">管理</a></li>
                     <li className="layui-nav-item"><a href="">用户</a></li>
                     <li className="layui-nav-item">
                         <a href="javascript:;">其它系统</a>
