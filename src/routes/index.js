@@ -6,11 +6,6 @@ import film from '../static/film';
 import react from '../static/react';
 import vue from '../static/vue';
 import angular from '../static/angular';
-const One = () => (
-    <div>
-        <h2>首页</h2>
-    </div>
-)
 
 const Lists = ({ match }) => (
     <div>

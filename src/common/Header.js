@@ -29,7 +29,7 @@ export default class Header extends Component {
                     <li className="layui-nav-item"><a href="">管理</a></li>
                     <li className="layui-nav-item"><a href="">用户</a></li>
                     <li className="layui-nav-item">
-                        <a href="javascript:;">其它系统</a>
+                        <a href=" ">其它系统</a>
                         <dl className="layui-nav-child">
                             <dd><a href="">邮件管理</a></dd>
                             <dd><a href="">消息管理</a></dd>
